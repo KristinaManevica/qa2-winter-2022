@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 import java.awt.*;
 
 public class ObjectsPractise {
-    @Test                                                 //nuzhen metod, funkcija
+    @Test                                                 //nuzhen metod, funkcija   (@Test pered kazhdim metodom)
     public void workingWitOrders() {                      //vsegda public tak kak biblioteka void vsegda pustije nichego ne vozvrawajut
         Order firstOrder = new Order();                  //new Order() -> delajem kopiju nawego objekta Order chto bi potom rabotatj s nej
                                                          //Order firstOrder =  -> nado sohranjatj vsegda v peremennije firstOrder, kuda sohranim nawu kopiju
@@ -25,3 +25,6 @@ public class ObjectsPractise {
         System.out.println(secondOrder.getTotalPrice());
     }
 }
+
+
+//ctrl + alt + L - viravnivajet kod
