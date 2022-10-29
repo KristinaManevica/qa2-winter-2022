@@ -3,19 +3,17 @@ package homework3;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
-public class SearchCompareTextElement {
+public class CompareTextElement {
     private final By ACCEPT_COOKIES_BTN = By.id("onetrust-accept-btn-handler");
     private final By LATVIA_COUNTRY_HREF = By.xpath(".//a[@href='https://www.discovercars.com/latvia']");
-    /*private final By HEADER_START_H1 = By.xpath(".//h1[contains(@class, 'home-h1 display-small')]");
-    private final By HEADER_LATVIA_H1 = By.xpath(".//h1[@class= 'home-h1 display-small' and .//[contains(text(), 'Car Rental in Latvia')]");
-     */
-
 
     @Test
     public void searchClickElement() {
@@ -31,16 +29,16 @@ public class SearchCompareTextElement {
 
         driver.findElement(ACCEPT_COOKIES_BTN).click();
 
-        String firstElement = driver.findElement(By.xpath(".//h1[contains(@class, 'home-h1 display-small')]")).getText();
+        List<WebElement> firstElement = driver.findElements(By.xpath(".//h1[contains(@class, 'home-h1 display-small')]"));
 
         driver.findElement(LATVIA_COUNTRY_HREF).click();
 
-        String secondElement = driver.findElement(By.xpath(".//h1[contains(@class, 'home-h1 display-small')]")).getText();
+        List<WebElement> secondElement = driver.findElements(By.xpath(".//h1[contains(@class, 'home-h1 display-small')]"));
 
-        if (firstElement.equalsIgnoreCase(secondElement)) {
+        if (firstElement.equals(secondElement)) {
             System.out.println("Something is wrong");
         } else {
-            System.out.println("It is correct, two different texts in top");
+            System.out.println("It is correct, two different texts in element");
         }
     }
 }
