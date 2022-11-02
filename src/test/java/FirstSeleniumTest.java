@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-// (esli v konce id cifri, ili simvoli -> chto-to ne tak-> refresh, esli id pomenjalasj - avtogenirirujetsja id)
+                                                                                               // (esli v konce id cifri, ili simvoli -> chto-to ne tak-> refresh, esli id pomenjalasj - avtogenirirujetsja id)
                                                                                                //by name (formi vvoda): <input type="text" name="element_name">
 public class FirstSeleniumTest {                                                              //by Xpath <div class="main"> , klassi
                                                                                               //final - ne bjudet izmenina, konstanta; u lokatora tip davnnih BY
@@ -28,8 +28,18 @@ public class FirstSeleniumTest {                                                
 
         //Thread.sleep(30000); --ploho
         browser.findElement(ACCEPT_COOKIES_BTN).click();
+
+    //list, spiski, kollekcii
+
+
+
+
+
+
+
+
+
+
+
     }
 }
-
-
-//***zadacha spisok stran cliknutj, peregruzitsja, proveritj chto sverhu nazvanije car renal in LATVIA (lists posmotretj)
