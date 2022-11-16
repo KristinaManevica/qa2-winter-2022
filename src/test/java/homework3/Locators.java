@@ -15,6 +15,7 @@ public class Locators {
     private final By ARROW_SLIDER_SVG = By.xpath(".//div[@style='position: relative; height: 0; width: 100%; padding: 0; padding-bottom: 100%;']");
     private final By TOP_WIDGET_DIV = By.xpath(".//div[@class='tp-widget-review']");
     private final By RECOMMENDED_SECTION_H2 = By.xpath(".//div[@class='col-12']/h2");
+
     private final By CAR_TOP_FILTER_DIV = By.xpath(".//div[@class='car-top-filter-item car-groups-item filtering-event init']");
     private final By CAR_TOP_FILTER_SLIDER = By.xpath(".//div[@class='car-top-filter-control next']");
     private final By SHOWING_CARS_NUMBER_SPAN = By.xpath(".//span[@class='showing-cars']");
@@ -33,17 +34,4 @@ public class Locators {
     private final By SPINNER_DIV = By.xpath(".//div[@class='lds-ellipsis v2']");
     private final By SEARCHING_FIRST_LINE_TEXT_DIV = By.xpath(".//div[@class='mb-8 text-24 text-bold text-center']");
     private final By SEARCHING_SECOND_LINE_DIV = By.xpath(".//div[@class='mb-24 text-center']");
-
-
-
-
-
-
-
-
-
 }
-
-//*[@id="review-arrow-left"]/div[2]/div
-//*[@id="filter-fuel-type"]/label
-
