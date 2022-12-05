@@ -12,7 +12,7 @@ public class Locators {
     private final By PICK_UP_DATE_DIV = By.xpath(".//div[@class='fake-field clearfix']");
     private final By RESIDENCE_COUNTRY_U = By.id("sb-country");
     private final By SEARCH_BTN = By.xpath(".//button[@class='button button-green button-lg submit prevent-loading trigger-gtm-sb gtm-track-fix']");
-    private final By ARROW_SLIDER_SVG = By.xpath(".//div[@style='position: relative; height: 0; width: 100%; padding: 0; padding-bottom: 100%;']");
+    private final By ARROW_SLIDER_SVG = By.xpath(".//div[@class='svg-slider-arrow']");
     private final By TOP_WIDGET_DIV = By.xpath(".//div[@class='tp-widget-review']");
     private final By RECOMMENDED_SECTION_H2 = By.xpath(".//div[@class='col-12']/h2");
 
@@ -25,7 +25,7 @@ public class Locators {
     private final By RENTAL_CONDITION_A = By.xpath(".//a[@class='open-modal search-index trigger-gtm-rc rental-conditions with-logo']");
     private final By VIEW_BTN = By.xpath(".//div[@class='ca-table-cell top']");
     private final By CAR_SPEC_PRICE_SPAN = By.xpath(".//label[@for='air-conditioning-air-conditioning-y']/span");
-    private final By FUEL_TYPE_INPUT = By.xpath(".//label[@for='fuel-type-ft-D']");
+    private final By FUEL_TYPE_INPUT = By.xpath(".//label[contains(@class, 'my-checkbox-label-.......']");
     private final By NUMBER_OF_SEATS_LABEL = By.xpath(".//label[@for='number-of-seats-seats-4']");
     private final By PART_PREPAYMENT_BADGE = By.xpath(".//div[@class='dc-ui badges mt-12']/span");
     private final By RATING_DIV = By.xpath(".//div[@class='supplier-rating']");
@@ -35,3 +35,19 @@ public class Locators {
     private final By SEARCHING_FIRST_LINE_TEXT_DIV = By.xpath(".//div[@class='mb-8 text-24 text-bold text-center']");
     private final By SEARCHING_SECOND_LINE_DIV = By.xpath(".//div[@class='mb-24 text-center']");
 }
+
+/*
+najti lokator na vse filtri, chtobi najti kol-vo elementov:
+poluchitj kol-vo vseh filtrov v code: cherez cikl, rabota s odinakovimi elementami
+
+sout "total filters count"+ kol-vo vseh filtrov
+
+
+amazon
+
+
+
+
+
+
+ */

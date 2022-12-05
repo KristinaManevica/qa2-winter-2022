@@ -49,4 +49,7 @@ public class WorkingWithLists {
         }
     }
 }
-
+ /*
+ while (driver.findElements(NEXT_BTN).isEmpty()); -cikl while; proverjam poka estj eta knopka -mi chto-to delajem; kak toljko ne budet, cikl ostanovitsja
+  (do something)
+  */
