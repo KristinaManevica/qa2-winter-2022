@@ -18,7 +18,7 @@ public class TicketsTests {
     private final By GO_BTN = By.xpath(".//span[@class='gogogo']");
 
     private final By NAME_INPUT = By.id("name");
-    private final By SURNAME_INPUT = By.id("surname");      //peremennaja lokatora
+    private final By SURNAME_INPUT = By.id("surname");
     private final By DISCOUNT_INPUT = By.id("discount");
     private final By ADULTS_INPUT = By.id("adults");
     private final By CHILDREN_INPUT = By.id("children");
@@ -40,7 +40,7 @@ public class TicketsTests {
         Select airportFrom = new Select(driver.findElement(FROM_SELECT));       Select - objekt seleniuma dlja raboti s dropdown; sozdaem kopiju objekta s peremennoj airportFrom; (driver.findElement(FROM_SELECT)) -> peredajem sam webelement, ne lokator a sam dropdown najdennije po lokatoru
         airportFrom.selectByValue("RIX");                                     cherez peremennuju metod select - viberaem option atribut 'value' selectByValue("RIX")
         */
-        select(FROM_SELECT, "RIX");      //posle odlejnogo metoda iz 61 -> select - metod nazvanije metoda 61; peredaem locator i znachenije chto vibratj
+        select(FROM_SELECT, "RIX");      //posle otdeljnogo metoda iz 61 -> select - metod nazvanije metoda 61; peredaem locator i znachenije chto vibratj
         select(TO_SELECT, "SFO");
 
         driver.findElement(GO_BTN).click();

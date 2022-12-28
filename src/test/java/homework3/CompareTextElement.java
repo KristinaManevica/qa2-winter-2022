@@ -42,7 +42,7 @@ public class CompareTextElement {
 
         boolean isCountryFound = false;
 
-        for (WebElement link : links) {                                 //cikl foreach; : links -> 39 stroka (mozhno vnutri foreach iz 39 stroki); po zadannomu lokatoru najdet vesj spisok elementov; WebElement links - eto budet kazhdij najdennij webelement i nazvanije peremennoj links kuda budet klastjsja chto najdeno (obichno nazvanije peremennoj = we)
+        for (WebElement link : links) {                                 //cikl foreach; : links -> 39 stroka (mozhno vnutri foreach iz 39 stroki); po zadannomu lokatoru najdet vesj spisok elementov; WebElement link - eto budet kazhdij najdennij webelement i nazvanije peremennoj links kuda budet klastjsja chto najdeno (obichno nazvanije peremennoj = we)
             if (link.getText().equals(country)) {                       // if(link. -> tekuwij webelement(43 stroke WebElement link); .getText() - poluchaem iz nego tekst; mozhno ne text a naprimer getAttribute() - bratj attribute iz html; equels - tochnoje sovpadenije; (country) - eto iz 24 stroki
                 isCountryFound = true;                                     //.equels(country) -> (country) 36 stroka
                 wait.until(ExpectedConditions.elementToBeClickable(link));
