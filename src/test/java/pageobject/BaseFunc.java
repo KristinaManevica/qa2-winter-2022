@@ -67,4 +67,12 @@ public class BaseFunc {
     public void waitForElementsCountToBe(By locator, int count) {
         wait.until(ExpectedConditions.numberOfElementsToBe(locator, count));
     }
+
+    public void waitForMinElementsAmount(By locator, int minCount){
+        wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(locator, minCount));
+    }
+
+    public void click(WebElement we){
+        wait.until(ExpectedConditions.elementToBeClickable(we)).click();
+    }
 }

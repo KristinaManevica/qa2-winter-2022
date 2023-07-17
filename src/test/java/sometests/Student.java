@@ -1,3 +1,5 @@
+package sometests;
+
 public class Student {
     //--------------------ATRIBUTES_______________________
     private String firstName;    //eti prenodlezhat klassu

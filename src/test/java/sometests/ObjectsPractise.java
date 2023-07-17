@@ -1,3 +1,5 @@
+package sometests;
+
 import org.junit.jupiter.api.Test;
 
 import java.awt.*;
@@ -5,8 +7,8 @@ import java.awt.*;
 public class ObjectsPractise {
     @Test                                                 //nuzhen metod, funkcija   (@Test pered kazhdim metodom)
     public void workingWitOrders() {                      //vsegda public tak kak biblioteka void vsegda pustije nichego ne vozvrawajut
-        Order firstOrder = new Order();                  //new Order() -> delajem kopiju nawego objekta Order chto bi potom rabotatj s nej
-                                                         //Order firstOrder =  -> nado sohranjatj vsegda v peremennije firstOrder, kuda sohranim nawu kopiju
+        Order firstOrder = new Order();                  //new sometests.Order() -> delajem kopiju nawego objekta sometests.Order chto bi potom rabotatj s nej
+                                                         //sometests.Order firstOrder =  -> nado sohranjatj vsegda v peremennije firstOrder, kuda sohranim nawu kopiju
         firstOrder.setTotalPrice(12.34);                 // . -> vlozhennostj, objekt house.getFloor(9).getFlat(22).getKitchen().getTeapod().on();
         firstOrder.setAddress("Rigas street 22");
         firstOrder.setItemCount(9);

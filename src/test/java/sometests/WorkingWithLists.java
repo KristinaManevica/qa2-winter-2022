@@ -1,4 +1,8 @@
+package sometests;
+
 import org.junit.jupiter.api.Test;
+import sometests.Student;
+
 import java.util.ArrayList;
 import java.util.List;
 

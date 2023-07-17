@@ -1,3 +1,5 @@
+package sometests;
+
 public class Order {
     //---------------------------ATRIBUTES---------------------------variables, praviljnee private vsegda
 

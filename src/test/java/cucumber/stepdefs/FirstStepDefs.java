@@ -1,4 +1,4 @@
-package stepdefs;
+package cucumber.stepdefs;
 
 import io.cucumber.java.en.When;
 

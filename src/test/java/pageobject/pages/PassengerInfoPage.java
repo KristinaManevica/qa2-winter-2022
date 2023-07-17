@@ -3,6 +3,7 @@ package pageobject.pages;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
 import pageobject.BaseFunc;
+import pageobject.model.FlightInfo;
 import pageobject.model.Passenger;
 
 public class PassengerInfoPage {
@@ -18,20 +19,21 @@ public class PassengerInfoPage {
 
     private final By RESERVATION_INFO = By.xpath(".//span[@class='bTxt']");
     private final By RESPONSE_BLOCK = By.id("response");
+    private final By BOOK_BTN = By.id("book2");
 
     private BaseFunc baseFunc;
     public PassengerInfoPage(BaseFunc baseFunc) {
         this.baseFunc = baseFunc;
     }
 
-    public void fillInPassengerInfo(Passenger passenger){
-        baseFunc.type(FIRST_NAME, passenger.getFirstName());
-        baseFunc.type(LAST_NAME, passenger.getLastName());
-        baseFunc.type(DISCOUNT, passenger.getDiscount());
-        baseFunc.type(ADULTS, passenger.getPeopleCount());
-        baseFunc.type(CHILDREN, passenger.getChildCount());
-        baseFunc.type(BAG, passenger.getBagCount());
-        baseFunc.selectByText(FLIGHT, passenger.getDate());
+    public void fillInPassengerInfo(FlightInfo flightInfo){
+        baseFunc.type(FIRST_NAME, flightInfo.getPassenger().getFirstName());
+        baseFunc.type(LAST_NAME, flightInfo.getPassenger().getLastName());
+        baseFunc.type(DISCOUNT, flightInfo.getDiscount());
+        baseFunc.type(ADULTS, flightInfo.getAdultsCount());
+        baseFunc.type(CHILDREN, flightInfo.getChildrenCount());
+        baseFunc.type(BAG, flightInfo.getLuggageCount());
+        baseFunc.selectByText(FLIGHT, flightInfo.getFlightDate());
 
         baseFunc.click(GET_PRICE_LINK);
         baseFunc.waitForElementsCountToBe(RESERVATION_INFO, 5);
@@ -63,4 +65,7 @@ public class PassengerInfoPage {
         return StringUtils.substringBetween(text, "for ", " EUR");
     }
 
+    public void book(){
+        baseFunc.click(BOOK_BTN);
+    }
 }
